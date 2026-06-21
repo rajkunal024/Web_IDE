@@ -1,5 +1,11 @@
 {
+  "name": "web-ide",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run start --prefix backend\" \"npm run dev --prefix frontend\""
+  },
   "dependencies": {
+    "concurrently": "^9.2.3",
     "react-avatar": "^5.0.3"
   }
 }
